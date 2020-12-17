@@ -23,8 +23,19 @@ ingredients.forEach(item=>{
     itemRef.textContent = item;
     //itemsElementsRef.push(itemRef);
     repListRef.appendChild(itemRef);
-})
+});
 // console.log(repListRef);
-listRef.replaceWith(repListRef);
+//listRef.replaceWith(repListRef);
 const newListRef = document.querySelector("ul#ingredients");
 // console.log(newListRef);
+
+const itemsElementsRef = [];
+ingredients.forEach(item=>{
+  const itemRef = document.createElement("li");
+  itemRef.textContent = item;
+  itemsElementsRef.push(itemRef);  
+});
+//console.log(itemsElementsRef);
+//console.log(repListRef);
+listRef.append(...itemsElementsRef);
+console.log(listRef);
