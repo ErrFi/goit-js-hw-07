@@ -1,3 +1,18 @@
+.task01_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightgoldenrodyellow;
+    /* outline: 1px solid green; */
+}
+.task02_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightgrey;
+    /* outline: 1px solid green; */
+}
+
 /* task 03 styles */
 *{
     box-sizing: border-box;
@@ -6,6 +21,8 @@
     display: block;
     width: 100%;
     padding: 50px 50px;
+    background-color: lightgoldenrodyellow;
+
 }
 #gallery{
     display: flex;
@@ -54,7 +71,7 @@
     display: block;
     width: 100%;
     padding: 50px 50px;
-    background-color: lightpink;
+    background-color: lightgoldenrodyellow;
     /* outline: 1px solid green; */
 }
 .task05_sect input, h1{
@@ -93,7 +110,7 @@
     display: block;
     width: 100%;
     padding: 50px 50px;
-    background-color: lightpink;
+    background-color: lightgoldenrodyellow;
     /* outline: 1px solid green; */
     
     

@@ -17,3 +17,4 @@
 console.log("========task 8");
 const taskSectionRef = document.querySelector(".task07_sect");
 console.log(taskSectionRef);
+
