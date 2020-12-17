@@ -7,14 +7,51 @@
 // если неправильное - красным.
 // Для добавления стилей, используй CSS-классы valid и invalid.
 
-// #validation-input {
-//   border: 3px solid #bdbdbd;
-// }
+console.log("========task 6");
+const taskSectionRef = document.querySelector(".task06_sect");
+//console.log(taskSectionRef);
+const inputRef = taskSectionRef.querySelector('#validation-input');
+//console.dir(inputRef);
 
-// #validation-input.valid {
-//   border-color: #4caf50;
-// }
-
-// #validation-input.invalid {
-//   border-color: #f44336;
-// }
+function hndlInputBlur(event){
+    //console.log(event.target.value, 'length is: ', event.target.value.length, 'must be: ', inputRef.getAttribute('data-length'));
+    if (event.target.value.length==(inputRef.getAttribute('data-length'))){
+        //alert("OK!");
+        // inputRef.setAttribute(
+        //     'class',
+        //     'valid'
+        // );
+        if(inputRef.classList.contains('valid')){
+            return;
+        };
+        if(inputRef.classList.contains('invalid')){
+            inputRef.classList.replace('invalid', 'valid');
+            return;
+        }; 
+        if(!inputRef.classList.contains('valid')&&!inputRef.classList.contains('invalid')){
+            inputRef.classList.add('valid');
+            return;
+        };
+        return;
+    }
+    else{
+        //alert("not match!");
+        if(inputRef.classList.contains('invalid')){
+            return;
+        };
+        if(inputRef.classList.contains('valid')){
+            inputRef.classList.replace('valid', 'invalid');
+            return;
+        }; 
+        if(!inputRef.classList.contains('valid')&&!inputRef.classList.contains('invalid')){
+            inputRef.classList.add('invalid');
+            return;
+        };       
+        
+        // inputRef.setAttribute(
+        //     'class',
+        //     'invalid'
+        // );
+    }
+}
+inputRef.addEventListener('blur', hndlInputBlur);

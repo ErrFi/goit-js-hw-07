@@ -8,3 +8,24 @@
 // значения счетчика
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление 
 // интерфейса
+console.log("========task 4");
+let counterValue = 0;
+const taskSectionRef = document.querySelector(".task04_sect");
+const incBtnRef = taskSectionRef.querySelector("[data-action=increment]");
+console.log(incBtnRef);
+const decBtnRef = taskSectionRef.querySelector("[data-action=decrement]");
+console.log(decBtnRef);
+const textField = taskSectionRef.querySelector("#value");
+console.log(textField);
+
+function increment(){
+    counterValue+=1;
+    textField.textContent = counterValue;
+};
+function decrement(){
+    counterValue-=1;
+    textField.textContent = counterValue;
+};
+
+incBtnRef.addEventListener('click', increment); 
+decBtnRef.addEventListener('click', decrement); 

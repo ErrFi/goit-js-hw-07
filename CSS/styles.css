@@ -34,4 +34,93 @@
     display: block;
     width: 100%;
     margin: 0px;
-};
+}
+/* task 04 styles */
+.task04_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightgrey;
+    /* outline: 1px solid green; */
+}
+.task04_sect button, span{
+    width: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* task 05 styles */
+.task05_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightpink;
+    /* outline: 1px solid green; */
+}
+.task05_sect input, h1{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* task 06 styles */
+.task06_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightgrey;
+    /* outline: 1px solid green; */
+    
+    
+}
+.task06_sect input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+#validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+#validation-input.invalid {
+    border-color: #f44336;
+  }
+/* task 07 styles */
+.task07_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightpink;
+    /* outline: 1px solid green; */
+    
+    
+}
+
+
+
+/* task 08 styles */
+.task08_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: lightgreen;
+    /* outline: 1px solid green; */   
+    
+}
+.task08_sect input, button{
+    font-size: 1.5rem;
+}
+#boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+
+    outline: 2px solid yellow;
+}
+.task08_sect .box{
+
+}

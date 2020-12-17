@@ -32,6 +32,7 @@ const imageListRef = document.querySelector("#gallery");
 console.log(imageListRef);
 const newImageListRef = imageListRef.cloneNode();
 console.log(newImageListRef);
+
 let partial='';
 images.forEach(image=>{
   partial += `<li class="gallery__item"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`;

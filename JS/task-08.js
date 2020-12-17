@@ -14,3 +14,6 @@
 // Каждый следующий div после первого, должен быть шире и выше предыдущего на 10px
 // Создай функцию destroyBoxes(), которая очищает div#boxes.
 
+console.log("========task 8");
+const taskSectionRef = document.querySelector(".task07_sect");
+console.log(taskSectionRef);
