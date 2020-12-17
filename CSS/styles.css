@@ -1,0 +1,37 @@
+/* task 03 styles */
+*{
+    box-sizing: border-box;
+}
+.task03_sect{
+    display: block;
+    width: 100%;
+    padding: 50px 50px;
+}
+#gallery{
+    display: flex;
+    margin: auto;
+    padding: 0px;
+    justify-content: start;
+    align-items: center;
+
+    list-style: none;
+}
+.gallery__item{
+    display: block;
+    /* margin: 0px 0px; */
+    /* margin-right: 10px; */
+    width: calc((100% - 2*10px)/3);
+}
+.gallery__item:not(:last-child){
+    margin: 0px 10px 0px 0px;
+    /* margin-right: 10px; */
+}
+.gallery__item:last-child{
+    margin: 0px 0px;
+    /* outline: 1px solid red; */
+}
+.gallery__image{
+    display: block;
+    width: 100%;
+    margin: 0px;
+};

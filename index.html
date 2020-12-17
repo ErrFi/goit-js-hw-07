@@ -4,47 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href=".//CSS/styles.css">
 </head>
 <body>
 <!-- task 1 -->
-    <ul id="categories">
-        <li class="item">
-          <h2>Животные</h2>
-      
-          <ul>
-            <li>Кот</li>
-            <li>Хомяк</li>
-            <li>Лошадь</li>
-            <li>Попугай</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Продукты</h2>
-      
-          <ul>
-            <li>Хлеб</li>
-            <li>Петрушка</li>
-            <li>Творог</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Технологии</h2>
-      
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </li>
+<section class="task02_sect">
+  <h2>
+    Task 1
+  </h2>
+  <ul id="categories">
+    <li class="item">
+      <h2>Животные</h2>
+  
+      <ul>
+        <li>Кот</li>
+        <li>Хомяк</li>
+        <li>Лошадь</li>
+        <li>Попугай</li>
       </ul>
-<!-- task 2 -->
-<ul id="ingredients"></ul>
+    </li>
+    <li class="item">
+      <h2>Продукты</h2>
+  
+      <ul>
+        <li>Хлеб</li>
+        <li>Петрушка</li>
+        <li>Творог</li>
+      </ul>
+    </li>
+    <li class="item">
+      <h2>Технологии</h2>
+  
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node</li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
+<!-- task 2 -->
+<section class="task02_sect">
+  <h2>
+    Task 2
+  </h2>
+  <ul id="ingredients"></ul>
+</section>
+
+<!-- task 3 -->
+<section class="task03_sect">
+  <ul id="gallery">
+    <li class="gallery__item">
+      <img class="gallery__image" src="https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Group of Horses Running">
+    </li>
+  </ul>
+</section>
+
+<!-- task 4 -->
+<section class="task04_sect">
+  <div id="counter">
+    <button type="button" data-action="decrement">-1</button>
+    <span id="value">0</span>
+    <button type="button" data-action="increment">+1</button>
+  </div>
+</section>
+
+<!-- task 5 -->
+<section class="task05_sect">
+  <input type="text" placeholder="Ваше имя?" id="name-input" />
+  <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+</section>
+
+<!-- task 6 -->
+<section class="task06_sect">
+  <input
+  type="text"
+  id="validation-input"
+  data-length="6"
+  placeholder="Введи 6 символов"
+/>
+</section>
+
+<!-- task 7 -->
+<section class="task07_sect">
+  <input id="font-size-control" type="range" />
+  <br />
+  <span id="text">Абракадабра!</span>
+</section>
+
+<!-- task 8 -->
+<section class="task08_sect">
+  <div id="controls">
+    <input type="number" min="0" max="100" step="1" />
+    <button type="button" data-action="render">Создать</button>
+    <button type="button" data-action="destroy">Очистить</button>
+  </div>
+  
+  <div id="boxes"></div>
+</section>
 <!-- JS -->
       <script src=".//JS/task-01.js" type="module"></script>
       <script src=".//JS/task-02.js" type="module"></script>
-
+      <script src=".//JS/task-03.js" type="module"></script>
+      <script src=".//JS/task-04.js" type="module"></script>
+      <script src=".//JS/task-05.js" type="module"></script>
+      <script src=".//JS/task-06.js" type="module"></script>
+      <script src=".//JS/task-07.js" type="module"></script>
+      <script src=".//JS/task-08.js" type="module"></script>
 </body>
 </html>
