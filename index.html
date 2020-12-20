@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- task 1 -->
-<section class="task01_sect">
+<section id="task01" class="task01_sect">
   <h2>
     Task 1
   </h2>
@@ -47,7 +47,7 @@
 </section>
 
 <!-- task 2 -->
-<section class="task02_sect">
+<section id="task02" class="task02_sect">
   <h2>
     Task 2
   </h2>
@@ -55,16 +55,13 @@
 </section>
 
 <!-- task 3 -->
-<section class="task03_sect">
+<section id="task03" class="task03_sect">
   <ul id="gallery">
-    <li class="gallery__item">
-      <img class="gallery__image" src="https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Group of Horses Running">
-    </li>
   </ul>
 </section>
 
 <!-- task 4 -->
-<section class="task04_sect">
+<section id="task04" class="task04_sect">
   <div id="counter">
     <button type="button" data-action="decrement">-1</button>
     <span id="value">0</span>
@@ -73,13 +70,13 @@
 </section>
 
 <!-- task 5 -->
-<section class="task05_sect">
+<section id="task05" class="task05_sect">
   <input type="text" placeholder="Ваше имя?" id="name-input" />
   <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 </section>
 
 <!-- task 6 -->
-<section class="task06_sect">
+<section id="task06" class="task06_sect">
   <input
   type="text"
   id="validation-input"
@@ -89,21 +86,22 @@
 </section>
 
 <!-- task 7 -->
-<section class="task07_sect">
+<section id="task07" class="task07_sect">
   <input id="font-size-control" type="range" />
   <!-- <br /> -->
   <span id="text">Абракадабра!</span>
 </section>
 
 <!-- task 8 -->
-<section class="task08_sect">
+<section id="task08" class="task08_sect">
   <div id="controls">
     <input type="number" min="0" max="100" step="1" />
     <button type="button" data-action="render">Создать</button>
     <button type="button" data-action="destroy">Очистить</button>
   </div>
   
-  <div id="boxes"></div>
+  <div id="boxes">
+  </div>
 </section>
 <!-- JS -->
       <script src=".//JS/task-01.js" type="module"></script>

@@ -8,19 +8,15 @@
 // Для добавления стилей, используй CSS-классы valid и invalid.
 
 console.log("========task 6");
-const taskSectionRef = document.querySelector(".task06_sect");
+const taskSectionRef = document.querySelector("#task06");
 //console.log(taskSectionRef);
 const inputRef = taskSectionRef.querySelector('#validation-input');
 //console.dir(inputRef);
 
 function hndlInputBlur(event){
     //console.log(event.target.value, 'length is: ', event.target.value.length, 'must be: ', inputRef.getAttribute('data-length'));
-    if (event.target.value.length==(inputRef.getAttribute('data-length'))){
-        //alert("OK!");
-        // inputRef.setAttribute(
-        //     'class',
-        //     'valid'
-        // );
+    const requiredLength = Number(inputRef.getAttribute('data-length'));
+    if (event.target.value.length===requiredLength){
         if(inputRef.classList.contains('valid')){
             return;
         };
@@ -47,11 +43,7 @@ function hndlInputBlur(event){
             inputRef.classList.add('invalid');
             return;
         };       
-        
-        // inputRef.setAttribute(
-        //     'class',
-        //     'invalid'
-        // );
+
     }
 }
 inputRef.addEventListener('blur', hndlInputBlur);

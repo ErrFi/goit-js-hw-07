@@ -5,7 +5,7 @@
 // ползунка будет меняться размер текста.
 
 console.log("========task 7");
-const taskSectionRef = document.querySelector(".task07_sect");
+const taskSectionRef = document.querySelector("#task07");
 //console.log(taskSectionRef);
 const inputRef = taskSectionRef.querySelector('#font-size-control');
 //console.log(inputRef);
@@ -14,8 +14,8 @@ const targetSpanRef = taskSectionRef.querySelector('#text');
 //console.log(targetSpanRef.style.fontSize);
 function hndlInputChange(event){
     
-    //targetSpanRef.style.fontSize = `${event.target.value}px`;
-    targetSpanRef.style.fontSize = `${event.target.value/25}rem`;
+    targetSpanRef.style.fontSize = `${event.target.value}px`;
+    //targetSpanRef.style.fontSize = `${event.target.value/25}rem`;
     console.log(targetSpanRef.style.fontSize);
 
 };

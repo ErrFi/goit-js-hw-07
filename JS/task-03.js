@@ -32,11 +32,20 @@ const imageListRef = document.querySelector("#gallery");
 console.log(imageListRef);
 const newImageListRef = imageListRef.cloneNode();
 console.log(newImageListRef);
+// method 1
+// const partial = images.reduce((acc, image)=>
+// acc+`<li class="gallery__item"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`
+// , ``);
+// images.forEach(image=>{
+//   partial += `<li class="gallery__item"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`;
 
-let partial='';
-images.forEach(image=>{
-  partial += `<li class="gallery__item"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`;
+// });
+// newImageListRef.insertAdjacentHTML('beforeend',partial);
+// imageListRef.replaceWith(newImageListRef);
 
-});
-newImageListRef.insertAdjacentHTML('beforeend',partial);
-imageListRef.replaceWith(newImageListRef);
+//method 2
+const partials = images.map(image=>`<li class="gallery__item"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`).reduce((acc,part)=>acc+=part, ``);
+// console.log(partials);
+imageListRef.insertAdjacentHTML('beforeend',partials);
+// console.log(imageListRef);
+

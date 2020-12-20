@@ -10,7 +10,7 @@
 // интерфейса
 console.log("========task 4");
 let counterValue = 0;
-const taskSectionRef = document.querySelector(".task04_sect");
+const taskSectionRef = document.querySelector("#task04");
 const incBtnRef = taskSectionRef.querySelector("[data-action=increment]");
 console.log(incBtnRef);
 const decBtnRef = taskSectionRef.querySelector("[data-action=decrement]");
